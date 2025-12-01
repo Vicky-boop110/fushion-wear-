@@ -10,7 +10,7 @@ const app = express();
 // Allowed origins for CORS
 const allowedOrigins = [
   'http://localhost:5173', // Main frontend
-  'http://localhost:5174', // Admin panel
+  'https://fushion-wear-ff-3nvo.vercel.app', // Admin panel
   process.env.CLIENT_ORIGIN,
 ].filter(Boolean);
 
@@ -46,4 +46,5 @@ app.use(notFound);
 app.use(errorHandler);
 
 module.exports = app;
+
 
